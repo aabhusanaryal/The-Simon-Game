@@ -1,0 +1,70 @@
+/* color variables */
+
+:root {
+  --main-bg-color: #b39ddb;
+  --box-one-color: #ffc300;
+  --box-two-color: #ff5733;
+  --box-three-color: #c70039;
+  --box-four-color: #900c3f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  height: 100%;
+}
+
+#score {
+  color: #ede7f6;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.container {
+  /* background-color: azure; */
+  height: 60%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  height: 45%;
+  width: 40%;
+  margin: 2%;
+  border: 10px solid #4a148c;
+  border-radius: 30px;
+}
+
+.box1 {
+  background-color: var(--box-one-color);
+}
+
+.box2 {
+  background-color: var(--box-two-color);
+}
+
+.box3 {
+  background-color: var(--box-three-color);
+}
+
+.box4 {
+  background-color: var(--box-four-color);
+}
+
+.darkBox {
+  background-color: black;
+}
