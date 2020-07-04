@@ -71,20 +71,42 @@ body {
 }
 
 .container {
-    height: 60%;
-    width: 40%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 45%;
+
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
+/* big vp */
+@media (min-width: 900px) {
+    .container {
+        top: 45%;
+        height: 60%;
+        width: 40%;
+    }
+
+    .box {
+        height: 15vw;
+        width: 15vw;
+    }
+}
+/* smol vp */
+@media (max-width: 899px) {
+    .container {
+        top: 50%;
+        height: 70%;
+        width: 90%;
+    }
+
+    .box {
+        height: 36vw;
+        width: 36vw;
+    }
+}
 .box {
-    height: 45%;
-    width: 40%;
     margin: 2%;
     border: 10px solid #4a148c;
     border-radius: 30px;

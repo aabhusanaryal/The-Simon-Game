@@ -66,7 +66,7 @@ const playBox = (box) => {
             lastColor = blue;
             break;
     }
-    gameScreen.style.color = lastColor;
+    levelBoard.style.color = lastColor;
 };
 
 const playArr = () => {
