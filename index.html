@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Simon Game</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="index.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <span id="score"></span>
-    <!-- container for the four blocks -->
-    <div class="container">
-      <div class="box1 box"></div>
-      <div class="box2 box"></div>
-      <div class="box3 box"></div>
-      <div class="box4 box"></div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Simon Game</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="index.js" defer></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Frijole&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Welcome screen -->
+        <div id="welcomeScreen">
+            <span id="title">The Simon Game</span><br />
+            <img src="./assets/images/mello.png" alt="Game icon marshmello" />
+            <button id="play">Play</button>
+        </div>
+        <!-- Game Screen -->
+        <div id="gameScreen">
+            <span id="level"></span>
+            <!-- container for the four blocks -->
+            <div class="container">
+                <div class="box1 box"></div>
+                <div class="box2 box"></div>
+                <div class="box3 box"></div>
+                <div class="box4 box"></div>
+            </div>
+        </div>
+    </body>
 </html>
